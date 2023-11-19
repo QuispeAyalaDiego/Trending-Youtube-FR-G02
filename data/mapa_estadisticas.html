@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d1b5b1725dc64a910679bd55c14a7237 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d1b5b1725dc64a910679bd55c14a7237" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d1b5b1725dc64a910679bd55c14a7237 = L.map(
+                "map_d1b5b1725dc64a910679bd55c14a7237",
+                {
+                    center: [46.6031, 1.8883],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a644cda93456eb04a07b971c917c613d = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_a644cda93456eb04a07b971c917c613d.addTo(map_d1b5b1725dc64a910679bd55c14a7237);
+    
+            var marker_2870ffa02c731684deda0d3cbf8ea36c = L.marker(
+                [47.75040448000001, 7.34998002],
+                {}
+            ).addTo(map_d1b5b1725dc64a910679bd55c14a7237);
+        
+    
+            var icon_e1ca143a322d2281ff8cd0d6d45ba2e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2870ffa02c731684deda0d3cbf8ea36c.setIcon(icon_e1ca143a322d2281ff8cd0d6d45ba2e0);
+        
+    
+        var popup_3a8ba745e1467db0b9ab7f032127e0e7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eea8d21e14d4d09024fdbf989b511d69 = $(`<div id="html_eea8d21e14d4d09024fdbf989b511d69" style="width: 100.0%; height: 100.0%;">State: Alsace<br>Views: 16361.450922795219, Likes: 10841.139821988181, Dislikes: 6486.342319573476</div>`)[0];
+                popup_3a8ba745e1467db0b9ab7f032127e0e7.setContent(html_eea8d21e14d4d09024fdbf989b511d69);
+            
+        
+
+        marker_2870ffa02c731684deda0d3cbf8ea36c.bindPopup(popup_3a8ba745e1467db0b9ab7f032127e0e7)
+        ;
+
+        
+    
+    
+            var marker_410cf7dab456a9fabae02995d66c6273 = L.marker(
+                [3.9104706, -51.810000650000006],
+                {}
+            ).addTo(map_d1b5b1725dc64a910679bd55c14a7237);
+        
+    
+            var icon_de77880a98923253ff933344ed17e05c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_410cf7dab456a9fabae02995d66c6273.setIcon(icon_de77880a98923253ff933344ed17e05c);
+        
+    
+        var popup_2eac6cb48d4abb512b58c3aaede07251 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_755a6d8bb3a99749743ffdb1d7b11507 = $(`<div id="html_755a6d8bb3a99749743ffdb1d7b11507" style="width: 100.0%; height: 100.0%;">State: Amapa<br>Views: 16590.19730575886, Likes: 11017.682987025475, Dislikes: 6524.337924076804</div>`)[0];
+                popup_2eac6cb48d4abb512b58c3aaede07251.setContent(html_755a6d8bb3a99749743ffdb1d7b11507);
+            
+        
+
+        marker_410cf7dab456a9fabae02995d66c6273.bindPopup(popup_2eac6cb48d4abb512b58c3aaede07251)
+        ;
+
+        
+    
+    
+            var marker_3650ef267c7a7fd482318847a53bd9e5 = L.marker(
+                [43.47327537, -1.5615948910000002],
+                {}
+            ).addTo(map_d1b5b1725dc64a910679bd55c14a7237);
+        
+    
+            var icon_98f39a0cf7818d0ed8691ded591a721d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3650ef267c7a7fd482318847a53bd9e5.setIcon(icon_98f39a0cf7818d0ed8691ded591a721d);
+        
+    
+        var popup_75eeb612d35b0da7bb88f82ef68a4c5c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_903ef78e6c9cbad74617b3c1bce0e6d3 = $(`<div id="html_903ef78e6c9cbad74617b3c1bce0e6d3" style="width: 100.0%; height: 100.0%;">State: Aquitaine<br>Views: 16474.008421304454, Likes: 10908.562231353655, Dislikes: 6435.294506606296</div>`)[0];
+                popup_75eeb612d35b0da7bb88f82ef68a4c5c.setContent(html_903ef78e6c9cbad74617b3c1bce0e6d3);
+            
+        
+
+        marker_3650ef267c7a7fd482318847a53bd9e5.bindPopup(popup_75eeb612d35b0da7bb88f82ef68a4c5c)
+        ;
+
+        
+    
+    
+            var marker_2e831d060a97ae94f52aefed52102edd = L.marker(
+                [45.77998212, 3.080008096],
+                {}
+            ).addTo(map_d1b5b1725dc64a910679bd55c14a7237);
+        
+    
+            var icon_8b62a58be134a8ebb1a5225ce04253d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2e831d060a97ae94f52aefed52102edd.setIcon(icon_8b62a58be134a8ebb1a5225ce04253d4);
+        
+    
+        var popup_3e386c7f3db5a354b158686c69ef013e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f10d2ad38649df5e799b8673944053a2 = $(`<div id="html_f10d2ad38649df5e799b8673944053a2" style="width: 100.0%; height: 100.0%;">State: Auvergne<br>Views: 15859.995969790487, Likes: 10504.415370689669, Dislikes: 6118.534430401104</div>`)[0];
+                popup_3e386c7f3db5a354b158686c69ef013e.setContent(html_f10d2ad38649df5e799b8673944053a2);
+            
+        
+
+        marker_2e831d060a97ae94f52aefed52102edd.bindPopup(popup_3e386c7f3db5a354b158686c69ef013e)
+        ;
+
+        
+    
+    
+            var marker_76a92a4503e682d8e4977b1b11be5d31 = L.marker(
+                [49.65039187, -1.649987428],
+                {}
+            ).addTo(map_d1b5b1725dc64a910679bd55c14a7237);
+        
+    
+            var icon_c501c608b8a67c4da12f62abac81db3b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_76a92a4503e682d8e4977b1b11be5d31.setIcon(icon_c501c608b8a67c4da12f62abac81db3b);
+        
+    
+        var popup_cdc6025f994b1e317a545c8c3350994d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_108f4ff96d33dbad379abb85d3180dd0 = $(`<div id="html_108f4ff96d33dbad379abb85d3180dd0" style="width: 100.0%; height: 100.0%;">State: Basse Normandie<br>Views: 15556.305059078899, Likes: 10266.969273928973, Dislikes: 6119.188156423807</div>`)[0];
+                popup_cdc6025f994b1e317a545c8c3350994d.setContent(html_108f4ff96d33dbad379abb85d3180dd0);
+            
+        
+
+        marker_76a92a4503e682d8e4977b1b11be5d31.bindPopup(popup_cdc6025f994b1e317a545c8c3350994d)
+        ;
+
+        
+    
+    
+            var marker_032822dabe006774f23b858836e450e5 = L.marker(
+                [46.98373293, 3.166669473],
+                {}
+            ).addTo(map_d1b5b1725dc64a910679bd55c14a7237);
+        
+    
+            var icon_a4643cf68621b775bd09eeeaa0267d70 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_032822dabe006774f23b858836e450e5.setIcon(icon_a4643cf68621b775bd09eeeaa0267d70);
+        
+    
+        var popup_2a82bf79c35a76f68aad94d95cd27fd3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9ee338c9ffcf0baf79b7363cf16cf03a = $(`<div id="html_9ee338c9ffcf0baf79b7363cf16cf03a" style="width: 100.0%; height: 100.0%;">State: Bourgogne<br>Views: 15592.565148001213, Likes: 10309.667185014474, Dislikes: 6125.73053584337</div>`)[0];
+                popup_2a82bf79c35a76f68aad94d95cd27fd3.setContent(html_9ee338c9ffcf0baf79b7363cf16cf03a);
+            
+        
+
+        marker_032822dabe006774f23b858836e450e5.bindPopup(popup_2a82bf79c35a76f68aad94d95cd27fd3)
+        ;
+
+        
+    
+    
+            var marker_2e63e4f4c300e0ff9054d63129a7fd78 = L.marker(
+                [48.51666262, -2.783303265],
+                {}
+            ).addTo(map_d1b5b1725dc64a910679bd55c14a7237);
+        
+    
+            var icon_b64945bb3ba7a818559f974d7b94093e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2e63e4f4c300e0ff9054d63129a7fd78.setIcon(icon_b64945bb3ba7a818559f974d7b94093e);
+        
+    
+        var popup_eae63bc3da8a487539ae9381d4a43bf3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0e6b0bf704c7afa922615440a4e76d90 = $(`<div id="html_0e6b0bf704c7afa922615440a4e76d90" style="width: 100.0%; height: 100.0%;">State: Bretagne<br>Views: 16260.0436389422, Likes: 10677.39401064836, Dislikes: 6248.226267740611</div>`)[0];
+                popup_eae63bc3da8a487539ae9381d4a43bf3.setContent(html_0e6b0bf704c7afa922615440a4e76d90);
+            
+        
+
+        marker_2e63e4f4c300e0ff9054d63129a7fd78.bindPopup(popup_eae63bc3da8a487539ae9381d4a43bf3)
+        ;
+
+        
+    
+    
+            var marker_ad52c91ea597b215838cbc0c7df97f2e = L.marker(
+                [47.08372683, 2.399997923],
+                {}
+            ).addTo(map_d1b5b1725dc64a910679bd55c14a7237);
+        
+    
+            var icon_89f5014f2b96f39bcf2a2e53f40d5150 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ad52c91ea597b215838cbc0c7df97f2e.setIcon(icon_89f5014f2b96f39bcf2a2e53f40d5150);
+        
+    
+        var popup_8362f5adfd2e87569b1676aa10cdb619 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_72522ded0931df9c3500396f00b82a20 = $(`<div id="html_72522ded0931df9c3500396f00b82a20" style="width: 100.0%; height: 100.0%;">State: Centre<br>Views: 16067.469187270855, Likes: 10683.25500732443, Dislikes: 6335.051180384295</div>`)[0];
+                popup_8362f5adfd2e87569b1676aa10cdb619.setContent(html_72522ded0931df9c3500396f00b82a20);
+            
+        
+
+        marker_ad52c91ea597b215838cbc0c7df97f2e.bindPopup(popup_8362f5adfd2e87569b1676aa10cdb619)
+        ;
+
+        
+    
+    
+            var marker_f555032ae69b13b77990157ccaf3fb61 = L.marker(
+                [48.34039431, 4.083357705],
+                {}
+            ).addTo(map_d1b5b1725dc64a910679bd55c14a7237);
+        
+    
+            var icon_d5dc886b4921348bc6c635716119be58 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f555032ae69b13b77990157ccaf3fb61.setIcon(icon_d5dc886b4921348bc6c635716119be58);
+        
+    
+        var popup_4c1b6b53e0456e8c58722b0efb1a0ca3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a782fb266fd5e0b33e87508dacf1b89e = $(`<div id="html_a782fb266fd5e0b33e87508dacf1b89e" style="width: 100.0%; height: 100.0%;">State: Champagne Ardenne<br>Views: 16493.334908986326, Likes: 11027.117472968928, Dislikes: 6578.241691928405</div>`)[0];
+                popup_4c1b6b53e0456e8c58722b0efb1a0ca3.setContent(html_a782fb266fd5e0b33e87508dacf1b89e);
+            
+        
+
+        marker_f555032ae69b13b77990157ccaf3fb61.bindPopup(popup_4c1b6b53e0456e8c58722b0efb1a0ca3)
+        ;
+
+        
+    
+    
+            var marker_9e51ccc6b4b60d8c2992de283c4e4771 = L.marker(
+                [41.92706484, 8.728293822],
+                {}
+            ).addTo(map_d1b5b1725dc64a910679bd55c14a7237);
+        
+    
+            var icon_2402feb9c30209f869f69a958f741ccd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9e51ccc6b4b60d8c2992de283c4e4771.setIcon(icon_2402feb9c30209f869f69a958f741ccd);
+        
+    
+        var popup_44345d7f856ca54e6df4857029850dac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_83eebb890a1ce1e1bf175bd26f0c2268 = $(`<div id="html_83eebb890a1ce1e1bf175bd26f0c2268" style="width: 100.0%; height: 100.0%;">State: Corse<br>Views: 16172.895336478876, Likes: 10705.92346196717, Dislikes: 6399.609584952668</div>`)[0];
+                popup_44345d7f856ca54e6df4857029850dac.setContent(html_83eebb890a1ce1e1bf175bd26f0c2268);
+            
+        
+
+        marker_9e51ccc6b4b60d8c2992de283c4e4771.bindPopup(popup_44345d7f856ca54e6df4857029850dac)
+        ;
+
+        
+    
+    
+            var marker_3e2c6f1ab8fd45eea9b2e02fe5390d0e = L.marker(
+                [47.22999697, 6.03000891],
+                {}
+            ).addTo(map_d1b5b1725dc64a910679bd55c14a7237);
+        
+    
+            var icon_80085b086213d630c2d890cfbc599195 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3e2c6f1ab8fd45eea9b2e02fe5390d0e.setIcon(icon_80085b086213d630c2d890cfbc599195);
+        
+    
+        var popup_0612021fcef3e47c0d7ad846046fa72b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_baf52a466e64cf485e5930505e291928 = $(`<div id="html_baf52a466e64cf485e5930505e291928" style="width: 100.0%; height: 100.0%;">State: Franche Comte<br>Views: 16538.430940952276, Likes: 10930.692151950283, Dislikes: 6571.910784837207</div>`)[0];
+                popup_0612021fcef3e47c0d7ad846046fa72b.setContent(html_baf52a466e64cf485e5930505e291928);
+            
+        
+
+        marker_3e2c6f1ab8fd45eea9b2e02fe5390d0e.bindPopup(popup_0612021fcef3e47c0d7ad846046fa72b)
+        ;
+
+        
+    
+    
+            var marker_9731374a5301fc3389a3e76e6ca6c8ca = L.marker(
+                [16.24147504, -61.5329989],
+                {}
+            ).addTo(map_d1b5b1725dc64a910679bd55c14a7237);
+        
+    
+            var icon_b2188827a55f5fc83d5526977344ed86 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9731374a5301fc3389a3e76e6ca6c8ca.setIcon(icon_b2188827a55f5fc83d5526977344ed86);
+        
+    
+        var popup_f8bf63668df91fa63fb7baefb664cd99 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_30946ad7fefafb2a0552a0a0fd12e5ac = $(`<div id="html_30946ad7fefafb2a0552a0a0fd12e5ac" style="width: 100.0%; height: 100.0%;">State: Guadeloupe<br>Views: 16308.740753990432, Likes: 10815.330123215517, Dislikes: 6439.239580171292</div>`)[0];
+                popup_f8bf63668df91fa63fb7baefb664cd99.setContent(html_30946ad7fefafb2a0552a0a0fd12e5ac);
+            
+        
+
+        marker_9731374a5301fc3389a3e76e6ca6c8ca.bindPopup(popup_f8bf63668df91fa63fb7baefb664cd99)
+        ;
+
+        
+    
+    
+            var marker_e9bc2dc98fd1bad815322ff1eda7fe32 = L.marker(
+                [4.729981302, -52.33002059],
+                {}
+            ).addTo(map_d1b5b1725dc64a910679bd55c14a7237);
+        
+    
+            var icon_96c58cf8aceb05d91d6af71ffc1061dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e9bc2dc98fd1bad815322ff1eda7fe32.setIcon(icon_96c58cf8aceb05d91d6af71ffc1061dd);
+        
+    
+        var popup_21f24cc43dbba5de062e87dfb08c7dd0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7bd189b534750ddaaa0b781518bbd5c8 = $(`<div id="html_7bd189b534750ddaaa0b781518bbd5c8" style="width: 100.0%; height: 100.0%;">State: Guinaa<br>Views: 16349.912616315205, Likes: 10810.932692759921, Dislikes: 6410.0334527668265</div>`)[0];
+                popup_21f24cc43dbba5de062e87dfb08c7dd0.setContent(html_7bd189b534750ddaaa0b781518bbd5c8);
+            
+        
+
+        marker_e9bc2dc98fd1bad815322ff1eda7fe32.bindPopup(popup_21f24cc43dbba5de062e87dfb08c7dd0)
+        ;
+
+        
+    
+    
+            var marker_0e657920de9ce8d2b6bddf8ea6d18855 = L.marker(
+                [49.93373374, 1.083334105],
+                {}
+            ).addTo(map_d1b5b1725dc64a910679bd55c14a7237);
+        
+    
+            var icon_5f665315e1c87d9c0d4e65c51e57e25d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0e657920de9ce8d2b6bddf8ea6d18855.setIcon(icon_5f665315e1c87d9c0d4e65c51e57e25d);
+        
+    
+        var popup_49620905901b3e88df72b826a119c678 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_18d093d9111fc8a499a3ed13ad3141d3 = $(`<div id="html_18d093d9111fc8a499a3ed13ad3141d3" style="width: 100.0%; height: 100.0%;">State: Haute Normandie<br>Views: 15893.755450099296, Likes: 10524.255385101615, Dislikes: 6207.441836741824</div>`)[0];
+                popup_49620905901b3e88df72b826a119c678.setContent(html_18d093d9111fc8a499a3ed13ad3141d3);
+            
+        
+
+        marker_0e657920de9ce8d2b6bddf8ea6d18855.bindPopup(popup_49620905901b3e88df72b826a119c678)
+        ;
+
+        
+    
+    
+            var marker_e057ec9810f941585e97a75a5d0e06bb = L.marker(
+                [48.53330243, 2.666648314],
+                {}
+            ).addTo(map_d1b5b1725dc64a910679bd55c14a7237);
+        
+    
+            var icon_5f5846e0fc52c1614c69a115b999f22f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e057ec9810f941585e97a75a5d0e06bb.setIcon(icon_5f5846e0fc52c1614c69a115b999f22f);
+        
+    
+        var popup_2b33a91c42120f1b828cad60ef86ee23 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_84bce6d5738c5006fd4310aea8a28376 = $(`<div id="html_84bce6d5738c5006fd4310aea8a28376" style="width: 100.0%; height: 100.0%;">State: Ile De France<br>Views: 17071.71545980259, Likes: 11309.371414716587, Dislikes: 6725.497756820887</div>`)[0];
+                popup_2b33a91c42120f1b828cad60ef86ee23.setContent(html_84bce6d5738c5006fd4310aea8a28376);
+            
+        
+
+        marker_e057ec9810f941585e97a75a5d0e06bb.bindPopup(popup_2b33a91c42120f1b828cad60ef86ee23)
+        ;
+
+        
+    
+    
+            var marker_829003c94e32776717c503a0dfbe9105 = L.marker(
+                [-21.03351072, 55.71281611999999],
+                {}
+            ).addTo(map_d1b5b1725dc64a910679bd55c14a7237);
+        
+    
+            var icon_144ad377cc21bdd4e884a5797f4cb49e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_829003c94e32776717c503a0dfbe9105.setIcon(icon_144ad377cc21bdd4e884a5797f4cb49e);
+        
+    
+        var popup_3cd8251a5d790f51637b221f6c6a007f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b334b6ec21b985d8c79e91c7cbdc076e = $(`<div id="html_b334b6ec21b985d8c79e91c7cbdc076e" style="width: 100.0%; height: 100.0%;">State: La Reunion<br>Views: 15631.684983344314, Likes: 10237.353783753671, Dislikes: 6097.9601162613635</div>`)[0];
+                popup_3cd8251a5d790f51637b221f6c6a007f.setContent(html_b334b6ec21b985d8c79e91c7cbdc076e);
+            
+        
+
+        marker_829003c94e32776717c503a0dfbe9105.bindPopup(popup_3cd8251a5d790f51637b221f6c6a007f)
+        ;
+
+        
+    
+    
+            var marker_78a407cc3f44fd5cd33444d0b8f2b0c4 = L.marker(
+                [42.69998924, 2.899967406],
+                {}
+            ).addTo(map_d1b5b1725dc64a910679bd55c14a7237);
+        
+    
+            var icon_e7e5c799b7b6a51c48e668e497d74ce2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_78a407cc3f44fd5cd33444d0b8f2b0c4.setIcon(icon_e7e5c799b7b6a51c48e668e497d74ce2);
+        
+    
+        var popup_dc5acfb07ad71df4e50f3553e9a6bb44 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f592172d293b0d8993b1244268d9eb2 = $(`<div id="html_7f592172d293b0d8993b1244268d9eb2" style="width: 100.0%; height: 100.0%;">State: Languedoc Roussillon<br>Views: 15991.636433166905, Likes: 10602.377294062642, Dislikes: 6357.973018342673</div>`)[0];
+                popup_dc5acfb07ad71df4e50f3553e9a6bb44.setContent(html_7f592172d293b0d8993b1244268d9eb2);
+            
+        
+
+        marker_78a407cc3f44fd5cd33444d0b8f2b0c4.bindPopup(popup_dc5acfb07ad71df4e50f3553e9a6bb44)
+        ;
+
+        
+    
+    
+            var marker_124d693329e7ccc31b014355fa14f6d6 = L.marker(
+                [45.15040814, 1.533332477],
+                {}
+            ).addTo(map_d1b5b1725dc64a910679bd55c14a7237);
+        
+    
+            var icon_979a9c7ab933f4589b0fd5324b7080aa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_124d693329e7ccc31b014355fa14f6d6.setIcon(icon_979a9c7ab933f4589b0fd5324b7080aa);
+        
+    
+        var popup_d5e2d04c9d20bc9766fc6e0bdfb21421 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_861e5889aa4fa29f94d5703fcc2b373d = $(`<div id="html_861e5889aa4fa29f94d5703fcc2b373d" style="width: 100.0%; height: 100.0%;">State: Limousin<br>Views: 16126.100653704003, Likes: 10646.401784219115, Dislikes: 6361.849819087923</div>`)[0];
+                popup_d5e2d04c9d20bc9766fc6e0bdfb21421.setContent(html_861e5889aa4fa29f94d5703fcc2b373d);
+            
+        
+
+        marker_124d693329e7ccc31b014355fa14f6d6.bindPopup(popup_d5e2d04c9d20bc9766fc6e0bdfb21421)
+        ;
+
+        
+    
+    
+            var marker_cc4fb69bfa52a805e06e957e33387e3c = L.marker(
+                [48.68368085, 6.200024372],
+                {}
+            ).addTo(map_d1b5b1725dc64a910679bd55c14a7237);
+        
+    
+            var icon_4e60ea419ed048f5e2b044c1eec4728d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cc4fb69bfa52a805e06e957e33387e3c.setIcon(icon_4e60ea419ed048f5e2b044c1eec4728d);
+        
+    
+        var popup_ec7908c54ad87a79cd5bf76b97edb849 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c7741bb0662da8852ab35d93ebee6bb8 = $(`<div id="html_c7741bb0662da8852ab35d93ebee6bb8" style="width: 100.0%; height: 100.0%;">State: Lorraine<br>Views: 16536.629075717436, Likes: 11001.960660575825, Dislikes: 6543.604727059188</div>`)[0];
+                popup_ec7908c54ad87a79cd5bf76b97edb849.setContent(html_c7741bb0662da8852ab35d93ebee6bb8);
+            
+        
+
+        marker_cc4fb69bfa52a805e06e957e33387e3c.bindPopup(popup_ec7908c54ad87a79cd5bf76b97edb849)
+        ;
+
+        
+    
+    
+            var marker_c779c7fb10a0ba4dbde20ea9fa92b3fd = L.marker(
+                [14.6104118, -61.08002914],
+                {}
+            ).addTo(map_d1b5b1725dc64a910679bd55c14a7237);
+        
+    
+            var icon_60b4da36454b9172295d20864f610e58 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c779c7fb10a0ba4dbde20ea9fa92b3fd.setIcon(icon_60b4da36454b9172295d20864f610e58);
+        
+    
+        var popup_7864bd37748b858d042e2f8035cd675c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_933ea1396b5049d7eb232b92c985caf2 = $(`<div id="html_933ea1396b5049d7eb232b92c985caf2" style="width: 100.0%; height: 100.0%;">State: Martinique<br>Views: 15321.184142048354, Likes: 10023.107949716214, Dislikes: 5970.898654482449</div>`)[0];
+                popup_7864bd37748b858d042e2f8035cd675c.setContent(html_933ea1396b5049d7eb232b92c985caf2);
+            
+        
+
+        marker_c779c7fb10a0ba4dbde20ea9fa92b3fd.bindPopup(popup_7864bd37748b858d042e2f8035cd675c)
+        ;
+
+        
+    
+    
+            var marker_db1cce30907d417153e459a3cc4f02f6 = L.marker(
+                [43.23329002, 0.083343464],
+                {}
+            ).addTo(map_d1b5b1725dc64a910679bd55c14a7237);
+        
+    
+            var icon_5cbdce5b2aee6baba386d5b79e7b1c01 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_db1cce30907d417153e459a3cc4f02f6.setIcon(icon_5cbdce5b2aee6baba386d5b79e7b1c01);
+        
+    
+        var popup_8a8490045f3fea2d98b86d61a394ae2f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_53e09cfb117ab3d05f5d6794a1fe2a7f = $(`<div id="html_53e09cfb117ab3d05f5d6794a1fe2a7f" style="width: 100.0%; height: 100.0%;">State: Midi Pyrenees<br>Views: 16816.43295441044, Likes: 11091.049899199474, Dislikes: 6643.0033143366245</div>`)[0];
+                popup_8a8490045f3fea2d98b86d61a394ae2f.setContent(html_53e09cfb117ab3d05f5d6794a1fe2a7f);
+            
+        
+
+        marker_db1cce30907d417153e459a3cc4f02f6.bindPopup(popup_8a8490045f3fea2d98b86d61a394ae2f)
+        ;
+
+        
+    
+    
+            var marker_6f58cb5d446c6e71ff95cbc703ab6503 = L.marker(
+                [-12.787089009999999, 45.27500362000001],
+                {}
+            ).addTo(map_d1b5b1725dc64a910679bd55c14a7237);
+        
+    
+            var icon_2c12086b68c5af088a0e011018eedd99 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6f58cb5d446c6e71ff95cbc703ab6503.setIcon(icon_2c12086b68c5af088a0e011018eedd99);
+        
+    
+        var popup_f2e7558141f2c2e3734b6c9d4e19fec4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_edefea7da38675a9f87b383ea4fa52dd = $(`<div id="html_edefea7da38675a9f87b383ea4fa52dd" style="width: 100.0%; height: 100.0%;">State: Moyotte<br>Views: 16433.67229733239, Likes: 10814.888630959187, Dislikes: 6418.163766591015</div>`)[0];
+                popup_f2e7558141f2c2e3734b6c9d4e19fec4.setContent(html_edefea7da38675a9f87b383ea4fa52dd);
+            
+        
+
+        marker_6f58cb5d446c6e71ff95cbc703ab6503.bindPopup(popup_f2e7558141f2c2e3734b6c9d4e19fec4)
+        ;
+
+        
+    
+    
+            var marker_b5012db0cf12664624fce097511a252e = L.marker(
+                [50.28332481000001, 2.783333698],
+                {}
+            ).addTo(map_d1b5b1725dc64a910679bd55c14a7237);
+        
+    
+            var icon_92955685011abeefaf827649a3538ac9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b5012db0cf12664624fce097511a252e.setIcon(icon_92955685011abeefaf827649a3538ac9);
+        
+    
+        var popup_4c91ef79815f4f7cf2c082e9b65474ec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8b6b735f6c2c5e5b076702087a24591b = $(`<div id="html_8b6b735f6c2c5e5b076702087a24591b" style="width: 100.0%; height: 100.0%;">State: Nord Pas De Calais<br>Views: 16119.13095084397, Likes: 10666.014897615034, Dislikes: 6350.516233163833</div>`)[0];
+                popup_4c91ef79815f4f7cf2c082e9b65474ec.setContent(html_8b6b735f6c2c5e5b076702087a24591b);
+            
+        
+
+        marker_b5012db0cf12664624fce097511a252e.bindPopup(popup_4c91ef79815f4f7cf2c082e9b65474ec)
+        ;
+
+        
+    
+    
+            var marker_a296230a004ae8990aa9c71d6d74f827 = L.marker(
+                [47.48000755, -0.530029949],
+                {}
+            ).addTo(map_d1b5b1725dc64a910679bd55c14a7237);
+        
+    
+            var icon_af066e5558e0e143dd57da1e5a13aed7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a296230a004ae8990aa9c71d6d74f827.setIcon(icon_af066e5558e0e143dd57da1e5a13aed7);
+        
+    
+        var popup_d66f74384ecc9fc896ce0ec447968656 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a31d8fcafee2a67165fb8515e8ec4c29 = $(`<div id="html_a31d8fcafee2a67165fb8515e8ec4c29" style="width: 100.0%; height: 100.0%;">State: Pays De La Loire<br>Views: 16644.16693705041, Likes: 10944.07389150922, Dislikes: 6520.865327750611</div>`)[0];
+                popup_d66f74384ecc9fc896ce0ec447968656.setContent(html_a31d8fcafee2a67165fb8515e8ec4c29);
+            
+        
+
+        marker_a296230a004ae8990aa9c71d6d74f827.bindPopup(popup_d66f74384ecc9fc896ce0ec447968656)
+        ;
+
+        
+    
+    
+            var marker_2bc35a29cd34a95f076655dabdeac102 = L.marker(
+                [49.90037661, 2.300004027],
+                {}
+            ).addTo(map_d1b5b1725dc64a910679bd55c14a7237);
+        
+    
+            var icon_7705ed7f4e6057ce8eab5dbd6c9297e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2bc35a29cd34a95f076655dabdeac102.setIcon(icon_7705ed7f4e6057ce8eab5dbd6c9297e1);
+        
+    
+        var popup_03c85902a6d33e34e008127176a7823a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_98c28173fdffc7991912b70d0170d8a9 = $(`<div id="html_98c28173fdffc7991912b70d0170d8a9" style="width: 100.0%; height: 100.0%;">State: Picardie<br>Views: 16256.247336106606, Likes: 10674.570217235947, Dislikes: 6366.595937703635</div>`)[0];
+                popup_03c85902a6d33e34e008127176a7823a.setContent(html_98c28173fdffc7991912b70d0170d8a9);
+            
+        
+
+        marker_2bc35a29cd34a95f076655dabdeac102.bindPopup(popup_03c85902a6d33e34e008127176a7823a)
+        ;
+
+        
+    
+    
+            var marker_ea697be58151c435f8dcbacf1fab89ef = L.marker(
+                [46.58329226, 0.333276529],
+                {}
+            ).addTo(map_d1b5b1725dc64a910679bd55c14a7237);
+        
+    
+            var icon_20c6fbd5db17e24e5771a4d1da8225b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ea697be58151c435f8dcbacf1fab89ef.setIcon(icon_20c6fbd5db17e24e5771a4d1da8225b4);
+        
+    
+        var popup_ad6e155a4b5d5e7cf5701d362b391821 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_830f02f8bdf32ee561215f3b986ff5d7 = $(`<div id="html_830f02f8bdf32ee561215f3b986ff5d7" style="width: 100.0%; height: 100.0%;">State: Poitou Charentes<br>Views: 15519.263740090591, Likes: 10178.307306456947, Dislikes: 6082.802059218777</div>`)[0];
+                popup_ad6e155a4b5d5e7cf5701d362b391821.setContent(html_830f02f8bdf32ee561215f3b986ff5d7);
+            
+        
+
+        marker_ea697be58151c435f8dcbacf1fab89ef.bindPopup(popup_ad6e155a4b5d5e7cf5701d362b391821)
+        ;
+
+        
+    
+    
+            var marker_a6648bc91699623d09d51de888fc61c6 = L.marker(
+                [43.51999086, 5.449992634],
+                {}
+            ).addTo(map_d1b5b1725dc64a910679bd55c14a7237);
+        
+    
+            var icon_ea2c95b4c81576b61d594112e58cb0b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a6648bc91699623d09d51de888fc61c6.setIcon(icon_ea2c95b4c81576b61d594112e58cb0b9);
+        
+    
+        var popup_7f017d7861f049ed626e313614a9ca89 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_807bd68622b0af9806bbd947ee2313f6 = $(`<div id="html_807bd68622b0af9806bbd947ee2313f6" style="width: 100.0%; height: 100.0%;">State: Provence Alpes Cote D'azur<br>Views: 17272.572651225793, Likes: 11437.228098233438, Dislikes: 6805.765815910083</div>`)[0];
+                popup_7f017d7861f049ed626e313614a9ca89.setContent(html_807bd68622b0af9806bbd947ee2313f6);
+            
+        
+
+        marker_a6648bc91699623d09d51de888fc61c6.bindPopup(popup_7f017d7861f049ed626e313614a9ca89)
+        ;
+
+        
+    
+    
+            var marker_6701dc3446ce41865058313473e63afd = L.marker(
+                [45.89997479, 6.116670287],
+                {}
+            ).addTo(map_d1b5b1725dc64a910679bd55c14a7237);
+        
+    
+            var icon_d86f68b6dc8b38fb87a193a4ffaeff66 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6701dc3446ce41865058313473e63afd.setIcon(icon_d86f68b6dc8b38fb87a193a4ffaeff66);
+        
+    
+        var popup_289e7c470cbebcf73f42286d6913506e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f3e31ac324c122650835dbee2504cbc1 = $(`<div id="html_f3e31ac324c122650835dbee2504cbc1" style="width: 100.0%; height: 100.0%;">State: Rhone Alpes<br>Views: 16940.373733062224, Likes: 11215.348110467288, Dislikes: 6645.048493459183</div>`)[0];
+                popup_289e7c470cbebcf73f42286d6913506e.setContent(html_f3e31ac324c122650835dbee2504cbc1);
+            
+        
+
+        marker_6701dc3446ce41865058313473e63afd.bindPopup(popup_289e7c470cbebcf73f42286d6913506e)
+        ;
+
+        
+    
+</script>
+</html>
