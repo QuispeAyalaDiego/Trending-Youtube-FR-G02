@@ -125,6 +125,7 @@ Este dataset se llama "FRvideos_cc50_202101.csv" el cual es un CSV con la inform
 Luego de la descarga se importaron al proyecto por medio de visual studio code en la carpeta code.
 ![1](https://github.com/QuispeAyalaDiego/Trending-Youtube-FR-G02/assets/83883211/2f5d64de-8376-48f1-b44d-fa581b6669f3)
 
+
 Con respecto a los datos con los cuales contamos en el dataset original son los siguientes:
 ![2](https://github.com/QuispeAyalaDiego/Trending-Youtube-FR-G02/assets/83883211/c3ac2354-08c3-4795-a69a-4812696543ad)
 
