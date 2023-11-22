@@ -123,10 +123,10 @@ Para recolectar los datos iniciales se descargaron del aula virtual los cuales s
 Este dataset se llama "FRvideos_cc50_202101.csv" el cual es un CSV con la información de los distintos campos. Después contamos con "FR_category_id.json", el cual es un archivo tipo JSON que nos es útil cuando estás trabajando con datos de YouTube para comprender las preferencias de los usuarios por medio de categorías.
 
 Luego de la descarga se importaron al proyecto por medio de visual studio code en la carpeta code.
-
+![1](https://github.com/QuispeAyalaDiego/Trending-Youtube-FR-G02/assets/83883211/2f5d64de-8376-48f1-b44d-fa581b6669f3)
 
 Con respecto a los datos con los cuales contamos en el dataset original son los siguientes:
-
+![2](https://github.com/QuispeAyalaDiego/Trending-Youtube-FR-G02/assets/83883211/c3ac2354-08c3-4795-a69a-4812696543ad)
 
 ## Descripción de los Campos en el Dataset
 - Este proceso implica la identificación y la descripción de cada campo/columna
@@ -162,16 +162,24 @@ Con respecto a los datos con los cuales contamos en el dataset original son los 
 
 Se importan las bibliotecas necesarias para el análisis de datos, como NumPy para operaciones numéricas, Pandas para manipulación de datos, Statsmodels para modelado estadístico, y las bibliotecas de visualización Matplotlib y Seaborn. `%matplotlib inline` se utiliza para mostrar gráficos directamente en el cuaderno si estás utilizando Jupyter Notebook.
 
+![3](https://github.com/QuispeAyalaDiego/Trending-Youtube-FR-G02/assets/83883211/802c2cf5-eca0-4c17-8e61-aaddee547885)
+
 ### Importación de datos desde un archivo CSV:
 
 Se lee un archivo CSV ("FRvideos_cc50_202101.csv") y se carga en un DataFrame de Pandas llamado FR_df. Este DataFrame probablemente contiene datos sobre videos de YouTube en Francia.
+
+![4](https://github.com/QuispeAyalaDiego/Trending-Youtube-FR-G02/assets/83883211/640a4632-a9c3-44e4-916a-c56f971e88de)
 
 ### Importación de datos desde un archivo JSON:
 
 Se lee un archivo JSON ("FR_category_id.json") que probablemente contiene información sobre las categorías de videos de YouTube en Francia. Los datos relevantes se extraen y se almacenan en el diccionario FR_category.
 
+![5](https://github.com/QuispeAyalaDiego/Trending-Youtube-FR-G02/assets/83883211/0f269649-e553-47a9-9505-f751da311573)
+
 ## Configuración de opciones de visualización de Pandas:
 Se configuran las opciones de visualización de Pandas para mostrar todas las columnas, todas las filas y desplegar el contenido completo de las columnas.
+
+![6](https://github.com/QuispeAyalaDiego/Trending-Youtube-FR-G02/assets/83883211/adc5e553-674a-422d-bede-4bc360b84f0c)
 
 
 ## VISUALIZAR LOS DATOS
@@ -180,6 +188,10 @@ Se configuran las opciones de visualización de Pandas para mostrar todas las co
 
 Se imprime una muestra aleatoria de 3 filas del DataFrame FR_df para examinar la estructura y el contenido de los datos. Esto puede ayudar a entender cómo se ven los datos y qué información contienen.
 
+![7](https://github.com/QuispeAyalaDiego/Trending-Youtube-FR-G02/assets/83883211/5342261f-54f8-4c8e-8efa-eda39a789c15)
+
+![8](https://github.com/QuispeAyalaDiego/Trending-Youtube-FR-G02/assets/83883211/b974eff8-0237-482f-a053-e06270aed75c)
+
 ## Verificar la calidad de los datos
 
 Para verificar la calidad de los datos se realizaron los siguientes análisis:
@@ -187,19 +199,35 @@ Para verificar la calidad de los datos se realizaron los siguientes análisis:
 ### Valores nulos en cada columna:
 Este código muestra la cantidad de valores nulos en cada columna del DataFrame FR_df.
 
+![9](https://github.com/QuispeAyalaDiego/Trending-Youtube-FR-G02/assets/83883211/b48d7c5f-3abf-40d4-83d5-a0c6266ae9ab)
+
 ### Análisis estadístico básico:
 Calcula estadísticas descriptivas como la media, la moda, la desviación estándar, etc., para las columnas numéricas del DataFrame.
+
+![10](https://github.com/QuispeAyalaDiego/Trending-Youtube-FR-G02/assets/83883211/73f34513-3372-44dd-8312-0eb5cc50781b)
+
+![11](https://github.com/QuispeAyalaDiego/Trending-Youtube-FR-G02/assets/83883211/887aaa9d-a344-48c9-a840-b5c067744cb9)
 
 ### Identificación y análisis de valores atípicos:
 Calcula los valores atípicos (outliers) en las columnas especificadas y muestra cuántos valores atípicos hay en cada columna.
 
+![12](https://github.com/QuispeAyalaDiego/Trending-Youtube-FR-G02/assets/83883211/d0f9ce5a-9efa-43b6-a364-d77b5d25c93c)
+
 ### Información sobre tipos de datos y cantidad de filas duplicadas:
 FR_df.info() proporciona información sobre los tipos de datos y la cantidad de valores no nulos en cada columna.
 
+![13](https://github.com/QuispeAyalaDiego/Trending-Youtube-FR-G02/assets/83883211/6a5dbbd6-f25f-4e5c-8e80-8fe3fa354cd0)
+
+![14](https://github.com/QuispeAyalaDiego/Trending-Youtube-FR-G02/assets/83883211/e854935e-7a0e-4c6f-997a-2ddb94531719)
+
 FR_df[FR_df.duplicated()].shape[0] cuenta la cantidad de filas duplicadas en el DataFrame.
+
+![15](https://github.com/QuispeAyalaDiego/Trending-Youtube-FR-G02/assets/83883211/005cda47-72e4-413f-9f6e-c601ea6bb5a9)
 
 ### Verificación de comentarios deshabilitados y videos con errores o removidos:
 Muestra la cantidad de videos con comentarios deshabilitados y la cantidad de videos con errores o que han sido removidos.
+
+![16](https://github.com/QuispeAyalaDiego/Trending-Youtube-FR-G02/assets/83883211/6089e747-5f07-4517-924e-67cad49741ed)
 
 ## Problemas reportados y consideraciones:
 
@@ -218,25 +246,43 @@ Muestra la cantidad de videos con comentarios deshabilitados y la cantidad de vi
 ### 3. PREPARACIÓN DE LOS DATOS
 Primero que todo creamos un nuevo dataframe el cual llamaremos “copy_FR” en el cual haremos los cambios respectivos.
 
+![17](https://github.com/QuispeAyalaDiego/Trending-Youtube-FR-G02/assets/83883211/df945f6b-2a5b-4d90-ba14-a332afdaeffb)
+
 #### Limpiar los Datos
 
 ### Eliminar columnas innecesarias ('thumbnail_link', 'tags', 'tags', 'description').
 Este código elimina las columnas innecesarias ('thumbnail_link', 'tags', 'tags', 'description') del DataFrame copy_FR.
 
+![18](https://github.com/QuispeAyalaDiego/Trending-Youtube-FR-G02/assets/83883211/aa309743-d18c-430d-ab21-f6eeaf31270e)
+
 ### Cambio del tipo de dato de 'category_id':
 -Se cambia el tipo de dato de la columna 'category_id' a tipo de dato de cadena (str) para que sea un categórico nominal y se nos facilite trabajar con futuras bibliotecas
+
+![19](https://github.com/QuispeAyalaDiego/Trending-Youtube-FR-G02/assets/83883211/fff5c1ea-e25b-4632-94d4-69fa0a7f253d)
+
+![20](https://github.com/QuispeAyalaDiego/Trending-Youtube-FR-G02/assets/83883211/9fc646c5-cc7c-4884-af38-938381f7e866)
 
 #### Transformación de las columnas de fechas:
 
 Estos códigos convierten las columnas de fecha ('trending_date' y 'publish_time') al formato de fecha y hora adecuado para un manejo más adecuado de los datos.
 
+![21](https://github.com/QuispeAyalaDiego/Trending-Youtube-FR-G02/assets/83883211/4e998a3c-90f6-43e7-839b-bc3f2e50c904)
+
 Verificamos los resultados  en cuestión
+
+![22](https://github.com/QuispeAyalaDiego/Trending-Youtube-FR-G02/assets/83883211/6b1f64e2-e185-4175-9a1c-fa3905930b34)
+
+![23](https://github.com/QuispeAyalaDiego/Trending-Youtube-FR-G02/assets/83883211/f277ff6c-46b7-4328-8df9-b3421b1cefd9)
 
 #### Aplicación de transformación logarítmica:
 Aplica la transformación logarítmica a las columnas seleccionadas ('views', 'likes', 'dislikes', 'comment_count') para reducir el sesgo en los datos.
 
+![24](https://github.com/QuispeAyalaDiego/Trending-Youtube-FR-G02/assets/83883211/002cf81e-4b2b-4531-a219-2a52245a8069)
+
 #### Visualización de los resultados de la transformación logarítmica:
 Muestra gráficos de caja (boxplots) para visualizar los resultados de la transformación logarítmica en las columnas seleccionadas.
+
+![25](https://github.com/QuispeAyalaDiego/Trending-Youtube-FR-G02/assets/83883211/dc050890-95d4-4d72-b334-ecac3d7a7c89)
 
 #### Construir Nuevos Datos:
 
@@ -246,47 +292,84 @@ Esta línea de código restablece el índice del DataFrame copy_FR y descarta el
 ### Guardar el DataFrame en un archivo CSV:
 Guarda el DataFrame copy_FR en un archivo CSV llamado 'clean_FR.csv'.
 
+![26](https://github.com/QuispeAyalaDiego/Trending-Youtube-FR-G02/assets/83883211/47fe1559-ab5b-4089-aa80-90cebb5a7dcf)
+
 ### Cargar el archivo CSV y realizar ajustes: 
 Carga el archivo CSV en un nuevo DataFrame llamado clean_FR y elimina la columna 'Unnamed: 0', que parece ser un índice adicional guardado en el archivo CSV.
+
+![27](https://github.com/QuispeAyalaDiego/Trending-Youtube-FR-G02/assets/83883211/3e8930ec-d41a-4bce-8e51-798341cc828f)
 
 ### Convertir columnas de fechas a tipo datetime:
 Convierte las columnas 'publish_time' y 'trending_date' a tipos de datos datetime64.
 
+![28](https://github.com/QuispeAyalaDiego/Trending-Youtube-FR-G02/assets/83883211/006d42e4-612f-457a-8c74-11b831f0e676)
+
 ### Mostrar información del DataFrame clean_FR: 
 Muestra información sobre el DataFrame clean_FR después de realizar las operaciones anteriores.
+
+![29](https://github.com/QuispeAyalaDiego/Trending-Youtube-FR-G02/assets/83883211/01142d8c-03b0-4943-952c-a7f4098396c2)
+
 
 #### Requerimientos
 
 1. ¿Qué categorías de videos son las de mayor tendencia?
 
+   ![30](https://github.com/QuispeAyalaDiego/Trending-Youtube-FR-G02/assets/83883211/5b341ebf-58cd-42c2-9ef8-47eecb8f8b14)
+
    - Se puede apreciar que las categorías con mayor cantidad de vistas son la: 24,22,23,17,10
      
 2. ¿Qué categorías de videos son los que más gustan? ¿Y las que menos te gustan?
+
+   ![31](https://github.com/QuispeAyalaDiego/Trending-Youtube-FR-G02/assets/83883211/a3750d6d-c2b7-4978-980f-2bdcfadc36f8)
    - Las categorías con mayor cantidad de “me gusta” son la 24,23,22,10,17; respectivamente.
+  
+     ![32](https://github.com/QuispeAyalaDiego/Trending-Youtube-FR-G02/assets/83883211/619369d5-8797-44fe-b9ae-a78c7e4d08f3)
    - Las categorías con mayor cantidad de “no me gusta” son la 24,22,23,10,17; respectivamente
      
 3. ¿Qué categorías de videos tienen la mejor proporción (ratio) de“Me gusta” / “No me gusta"?
+
+   ![33](https://github.com/QuispeAyalaDiego/Trending-Youtube-FR-G02/assets/83883211/4619be13-e0d9-4a95-b967-0b9ba24011ad)
    - La proporción demuestra que la categoría que tiene una mejor valoración de “me gusta” frente a “no me gusta” es la categoría 44.
      
 4. ¿Qué categorías de videos tienen la mejor proporción (ratio) de “Vistas” /“Comentarios”?
+
+   ![34](https://github.com/QuispeAyalaDiego/Trending-Youtube-FR-G02/assets/83883211/2d258cc4-50ea-43e6-8d1e-abea6b860718)
    - Se puede evidenciar que la categoría con mayor cantidad de comentarios es la número 29.
   
 5. ¿Cómo ha cambiado el volumen de los videos en tendencia a lo largo del tiempo?
+
+    ![35](https://github.com/QuispeAyalaDiego/Trending-Youtube-FR-G02/assets/83883211/3079f16b-0a78-4a14-8842-9ffe5f9b31d9)
    - Se puede verificar que la cantidad de números en tendencia se ha visto reducida con el paso de los años.
      
 6. ¿Qué canales de YouTube son tendencia más frecuentemente? ¿Y cuáles con menos frecuencia?
+
+   ![36](https://github.com/QuispeAyalaDiego/Trending-Youtube-FR-G02/assets/83883211/012f58f3-2ef3-4137-ae76-ba15aa484945)
    - Acorde al gráfico se puede verificar que el canal más visto según los datos es Troom.
+  
+     ![37](https://github.com/QuispeAyalaDiego/Trending-Youtube-FR-G02/assets/83883211/6a31ce09-b1e2-445f-8813-4f0985754dbc)
    - Acorde al gráfico se puede verificar que el canal menos visto según los datos es LeSurvivaliste.
      
 7. ¿En qué Estados se presenta el mayor número de “Vistas”, “Me gusta” y “No me gusta”?
+
+   ![38](https://github.com/QuispeAyalaDiego/Trending-Youtube-FR-G02/assets/83883211/53043bf4-e64a-4aa5-b3b9-23051525ea64)
    - El estado donde la gente da más “me gusta” es Provence Alpes.
+  
+     ![39](https://github.com/QuispeAyalaDiego/Trending-Youtube-FR-G02/assets/83883211/bcf429d2-c431-4ddb-8048-26cd4077c2ad)
    - El estado donde la gente da más “no me gusta” es de igual forma Provence Alpes.
+  
+     ![40](https://github.com/QuispeAyalaDiego/Trending-Youtube-FR-G02/assets/83883211/bbf483ca-d02c-49b9-9bbb-80640a881263)
    - El estado donde la gente mira más videos de Youtube es Provence Alpes.
      
 8. ¿Es factible predecir el número de “Vistas” o “Me gusta” o “No me gusta”?
+
+    ![41](https://github.com/QuispeAyalaDiego/Trending-Youtube-FR-G02/assets/83883211/5fd3e9bf-c2ee-4680-bde4-3530ac7f54ae)
    - En este modelo se ha realizado un modelo predictivo de la cantidad de “dislikes” a futuro por cada cantidad de vistas.
   
 9. ¿Los videos en tendencia son los que mayor cantidad de comentarios positivos reciben?
+
+    ![42](https://github.com/QuispeAyalaDiego/Trending-Youtube-FR-G02/assets/83883211/6b88be68-f9b7-4be2-ae3c-71fa1f647f42)
+
+   ![43](https://github.com/QuispeAyalaDiego/Trending-Youtube-FR-G02/assets/83883211/b02a9f54-4e13-4760-8520-e208cdf10f46)
     - No necesariamente los videos en tendencia son los que mayor cantidad de comentarios positivos reciben.
 
 
@@ -301,11 +384,17 @@ La regresión logística fue utilizada para modelar los comentarios positivos qu
 #### Generar el Plan de Prueba
 En este caso hemos utilizado tanto los dislikes, como las visitas para realizar el modelado del entrenamiento de los “no me gusta” a futuro que tendrán los videos de Youtube.
 
+![44](https://github.com/QuispeAyalaDiego/Trending-Youtube-FR-G02/assets/83883211/da7d3dac-d686-494e-ba9e-10295ad14f05)
+
 #### Construir el Modelo
 A continuación, se ejecuta la técnica seleccionada sobre los datos previamente preparados para generar uno o más modelos.
 
+![45](https://github.com/QuispeAyalaDiego/Trending-Youtube-FR-G02/assets/83883211/0678bea2-b38a-485e-a4db-9a14c4e235a8)
+
 #### Evaluar el Modelo
 Se puede apreciar que los modelos han alcanzado una precisión de más de 0.9, por lo que a largo plazo los datos serán correctos.
+
+![46](https://github.com/QuispeAyalaDiego/Trending-Youtube-FR-G02/assets/83883211/2b64efc2-0754-404c-9202-050a753cb184)
 
 ### 5. CONCLUSIONES
 
